@@ -1,0 +1,135 @@
+/* name: ArcticBlueLight */
+/* author: n3rd3x3 (https://github.com/n3rd3x3) */
+/* license: MIT */
+/* upstream: https://github.com/ArcticBlueLight/github */
+/* blurb: Soothing arctic theme for GitHub  */
+
+:root {
+	/* INTERNAL VARS */
+  --night0: hsl(180, 96%, 11%);
+  --night1: hsl(175, 94%, 13%);
+  --night2: hsl(165, 92%, 15%);
+  --night3: hsl(175, 90%, 20%);
+  --night4: hsl(170, 80%, 30%);
+  --smoke0: hsl(180, 22%, 86%);
+  --smoke1: hsl(210, 25%, 88%);
+  --smoke2: hsl(225, 24%, 90%);
+  --snow: hsl(0, 0%, 100%);
+  --flare: hsl(0, 91%, 67%);
+  --warning: hsl(42, 100%, 71%);
+  --pine: hsl(168, 94%, 41%);
+  --jacket: hsl(268, 68%, 52%);
+  --ocean: hsl(203, 99%, 31%);
+  --tide: hsl(188, 83%, 44%);
+  --arctic: hsl(55%, 3%, 0%, 11%);
+  
+  /* CONTRIBUTION GRAPH */
+	--color-graph-L1: hsl(128, 58%, 79%, 0.3);
+	--color-graph-L2: hsl(128, 58%, 79%, 0.6);
+	--color-graph-L3: hsl(128, 58%, 79%, 0.9);
+	--color-graph-L4: hsl(128, 58%, 79%);
+  
+  /* ADVANCED STUFF */
+	--color-fg-default: var(--snow) !important;
+	--color-fg-muted: var(--arctic) !important;
+	--color-fg-subtle: var(--arctic) !important;
+	--color-fg-on-emphasis: var(--arctic) !important;
+
+	--color-canvas-default: var(--arctic) !important;
+	--color-canvas-overlay: var(--arctic) !important;
+	--color-canvas-inset: var(--arctic) !important;
+	--color-canvas-subtle: var(--arctic) !important;
+
+	--color-border-default: var(--night4) !important;
+	--color-border-muted: var(--night3) !important;
+	--color-border-subtle: var(--smoke0) !important;
+
+	--color-shadow-small: 0 0 transparent !important;
+	--color-shadow-medium: 0 3px 6px var(--night1) !important;
+	--color-shadow-large: 0 8px 24px var(--night1) !important;
+	--color-shadow-extra-large: 0 12px 48px var(--night1) !important;
+
+	--color-neutral-emphasis-plus: var(--smoke0) !important;
+	--color-netral-emphasis: var(--smoke0) !important;
+	--color-neutral-muted: var(--night3) !important;
+	--color-neutral-subtle: var(--night1) !important;
+
+	--color-accent-fg: var(--tide) !important;
+	--color-accent-emphasis: var(--ocean) !important;
+	--color-accent-muted: var(--tide) !important;
+	--color-accent-subtle: var(--tide) !important;
+
+	--color-success-fg: var(--pine) !important;
+	--color-success-emphasis: var(--pine) !important;
+	--color-success-muted: var(--pine) !important;
+	--color-success-subtle: var(--pine) !important;
+
+	--color-attention-fg: var(--warning) !important;
+	--color-attention-emphasis: var(--warning) !important;
+	--color-attention-muted: var(--warning) !important;
+	--color-attention-subtle: var(--warning) !important;
+
+	--color-severe-fg: var(--flare) !important;
+	--color-severe-emphasis: var(--flare) !important;
+	--color-severe-muted: var(--flare) !important;
+	--color-severe-subtle: var(--flare) !important;
+
+	--color-danger-fg: var(--flare) !important;
+	--color-danger-emphasis: var(--flare) !important;
+	--color-danger-muted: var(--flare) !important;
+	--color-danger-subtle: var(--flare) !important;
+
+	--color-done-fg: var(--flare) !important;
+	--color-done-emphasis: var(--flare) !important;
+	--color-done-muted: var(--flare) !important;
+	--color-done-subtle: var(--flare) !important;
+
+	--color-sponsors-fg: var(--flare) !important;
+	--color-sponsors-emphasis: var(--flare) !important;
+	--color-sponsors-muted: var(--flare) !important;
+	--color-sponsors-subtle: var(--flare) !important;
+
+	--color-primer-border-active: var(--flare) !important;
+	--color-sidenav-selected-bg: var(--night1) !important;
+
+	--color-state-hover-primary-bg: var(--ocean) !important;
+	--color-state-hover-primary-border: var(--tide) !important;
+
+	--color-timeline-badge-bg: var(--color-border-muted) !important;
+  
+  /* BUTTONS */
+	--color-btn-text: var(--snow) !important;
+	--color-btn-bg: var(--night3) !important;
+	--color-btn-border: var(--color-btn-bg) !important;
+	--color-btn-hover-bg: var(--night4) !important;
+	--color-btn-hover-border: var(--color-btn-hover-bg) !important;
+	--color-btn-active-bg: var(--night4) !important;
+	--color-btn-active-border: var(--color-btn-active-bg) !important;
+	--color-btn-selected-bg: var(--night3) !important;
+	--color-btn-focus-bg: var(--night3) !important;
+	--color-btn-counter-bg: var(--night2) !important;
+	--color-btn-primary-text: var(--night2) !important;
+	--color-btn-primary-bg: var(--pine) !important;
+	--color-btn-primary-hover-bg: var(--pine) !important;
+	--color-btn-primary-selected-bg: var(--pine) !important;
+	--color-btn-primary-focus-bg: var(--pine) !important;
+	--color-btn-primary-icon: var(--night2) !important;
+	--color-btn-primary-disabled-bg: var(--pine) !important;
+	--color-btn-primary-disabled-text: var(--smoke2) !important;
+	--color-btn-outline-text: var(--tide) !important;
+	--color-btn-outline-hover-text: var(--tide) !important;
+	--color-btn-outline-hover-bg: var(--night1) !important;
+	--color-btn-outline-selected-text: var(--snow) !important;
+	--color-btn-outline-selected-bg: var(--ocean) !important;
+	--color-btn-outline-disabled-bg: var(--night1) !important;
+	--color-btn-danger-text: var(--flare) !important;
+	--color-btn-danger-hover-text: var(--snow) !important;
+	--color-btn-danger-hover-bg: var(--flare) !important;
+	--color-btn-danger-hover-border: var(--flare) !important;
+	--color-btn-danger-hover-icon: var(--snow) !important;
+	--color-btn-danger-selected-text: var(--snow) !important;
+	--color-btn-danger-selected-bg: var(--flare) !important;
+	--color-btn-danger-selected-border: var(--flare) !important;
+	--color-btn-danger-disabled-bg: var(--night2) !important;
+	--color-btn-danger-focus-border: var(--flare) !important;
+	--color-btn-danger-icon: var(--flare) !important;
