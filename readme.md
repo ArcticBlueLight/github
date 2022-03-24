@@ -1,9 +1,6 @@
 <h3 align="center">
   ArcticBlue GitHub Theme
-  </h3>
- <p align="center">
-  <img src="https://raw.githubusercontent.com/ArcticBlueLight/ArcticBlue/main/assets/palette.svg" width="500" />
-  </p>
+</h3>
  <p align="center">
   <a href="https://github.com/ArcticBlueLight/github/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/ArcticBlueLight/github?style=for-the-badge&color=8032D8&logoColor=67DEE4&labelColor=E7F1F4"></a>
