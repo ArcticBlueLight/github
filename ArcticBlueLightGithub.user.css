@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name ArcticBlueLight GitHub
+@namespace github.com/ArcticBlueLight
+@homepageURL https://github.com/ArcticBlueLight/github
+@version 1.0
+@updateURL https://raw.githubusercontent.com/ArcticBlueLight/github/main/ArcticBlueLightGithub.user.css
+@description Soothing arctic theme for GitHub
+@author n3rd3x3 (https://github.com/n3rd3x3)
+@license MIT
+==/UserStyle== */
+
+@-moz-document regexp('https?:\/\/(gist\.)?github.com.*') {
+	@import url('https://catppuccin.github.io/github/ArcticBlueLight.css');
+}
