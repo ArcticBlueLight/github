@@ -30,7 +30,7 @@
 	--color-graph-L4: hsl(128, 58%, 79%);
   
   /* ADVANCED STUFF */
-	--color-fg-default: var(--snow) !important;
+	--color-fg-default: var(--night0) !important;
 	--color-fg-muted: var(--arctic) !important;
 	--color-fg-subtle: var(--arctic) !important;
 	--color-fg-on-emphasis: var(--arctic) !important;
